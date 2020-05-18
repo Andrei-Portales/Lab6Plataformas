@@ -1,11 +1,15 @@
 package com.portales.lab6plataformas.Invitados
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.portales.lab6plataformas.R
+import kotlinx.android.synthetic.main.fragment_invitados.view.*
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +25,7 @@ class InvitadosFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var vista:View
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,8 +39,29 @@ class InvitadosFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        vista = inflater.inflate(R.layout.fragment_invitados, container, false)
+        vista.invitadosRecyler.setLayoutManager(LinearLayoutManager(activity))
+        vista.invitadosRecyler.setHasFixedSize(true)
+        var adapter =InvitadosAdapter(
+            requireContext(),
+           listOf<Invitado>(
+               Invitado("Andrei Portales","50569551","andreifan123@gmail.com","Estudiante"),
+               Invitado("Andrei Portales","50569551","andreifan123@gmail.com","Estudiante"),
+               Invitado("Andrei Portales","50569551","andreifan123@gmail.com","Estudiante"),
+               Invitado("Andrei Portales","50569551","andreifan123@gmail.com","Estudiante"),
+               Invitado("Andrei Portales","50569551","andreifan123@gmail.com","Estudiante"),
+               Invitado("Andrei Portales","50569551","andreifan123@gmail.com","Estudiante"),
+               Invitado("Andrei Portales","50569551","andreifan123@gmail.com","Estudiante"),
+               Invitado("Andrei Portales","50569551","andreifan123@gmail.com","Estudiante"),
+               Invitado("Andrei Portales","50569551","andreifan123@gmail.com","Estudiante"),
+               Invitado("Andrei Portales","50569551","andreifan123@gmail.com","Estudiante"),
+               Invitado("Andrei Portales","50569551","andreifan123@gmail.com","Estudiante"),
+               Invitado("Andrei Portales","50569551","andreifan123@gmail.com","Estudiante")
+           )
+        );
+        vista.invitadosRecyler.setAdapter(adapter)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_invitados, container, false)
+        return vista
     }
 
     companion object {
