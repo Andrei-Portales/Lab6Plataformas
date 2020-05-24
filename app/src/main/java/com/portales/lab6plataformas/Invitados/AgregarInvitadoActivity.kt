@@ -1,7 +1,8 @@
-package com.portales.lab6plataformas
+package com.portales.lab6plataformas.Invitados
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.portales.lab6plataformas.R
 
 class AgregarInvitadoActivity : AppCompatActivity() {
 

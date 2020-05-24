@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AgregarInvitadoActivity"></activity>
+        <activity android:name=".Invitados.AgregarInvitadoActivity"></activity>
         <activity
             android:name=".Main.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

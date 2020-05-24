@@ -21,18 +21,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-
-        /*
-        invitadoViewModel = ViewModelProviders.of(this).get(InvitadoViewModel::class.java)
-
-        invitadoViewModel.getAllInvitados().observe(this, object:Observer<List<Invitado>>{
-            override fun onChanged(t: List<Invitado>?) {
-                Toast.makeText(this@MainActivity,"onchanged",Toast.LENGTH_SHORT).show()
-            }
-
-        })
-
-         */
         val actionBarDrawerToggle = ActionBarDrawerToggle(this,drawer_layout,toolbar,
             R.string.navigation_open,
             R.string.navigation_close
