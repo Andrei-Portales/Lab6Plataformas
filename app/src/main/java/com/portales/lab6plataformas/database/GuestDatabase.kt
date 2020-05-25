@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.portales.lab6plataformas.guest.GuestRoleDatabaseDao
 
 
 @Database(entities = [Guest::class, GuestRole::class], version = 3, exportSchema = false)

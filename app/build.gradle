@@ -4,6 +4,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -15,7 +16,7 @@ android {
 
     defaultConfig {
         applicationId "com.portales.lab6plataformas"
-        minSdkVersion 23
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -71,7 +72,7 @@ dependencies {
 
     // Room and Lifecycle dependencies
 
-
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC2'
     //noinspection GradleDependency
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"

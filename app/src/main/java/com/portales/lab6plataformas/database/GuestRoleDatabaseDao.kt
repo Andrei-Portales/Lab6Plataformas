@@ -1,7 +1,8 @@
-package com.portales.lab6plataformas.database
+package com.portales.lab6plataformas.guest
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.portales.lab6plataformas.database.GuestRole
 
 @Dao
 interface GuestRoleDatabaseDao {

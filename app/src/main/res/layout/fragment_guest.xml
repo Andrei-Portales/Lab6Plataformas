@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,16 +7,16 @@
     <data>
         <variable
             name="viewModel"
-            type="com.portales.lab6plataformas.roles.RolesViewModel" />
+            type="com.portales.lab6plataformas.guest.GuestViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".roles.RolesFragment">
+        tools:context=".guest.GuestFragment">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/roles_list"
+            android:id="@+id/guests_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
@@ -26,6 +25,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
+
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
@@ -40,4 +40,3 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
-
